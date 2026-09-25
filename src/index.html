@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>sf</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <h1>sf</h1>
+
+    <!-- 主页 -->
+    <div id="home">
+      <textarea id="textInput" rows="4" placeholder="在此输入要发送的文本…"></textarea>
+      <button class="primary" id="btnText">发送文本</button>
+      <button class="primary" id="btnFile">发送文件</button>
+    </div>
+
+    <!-- 结果页 -->
+    <div id="result" style="display:none">
+      <p class="hint" id="hint">正在启动服务器…</p>
+      <div id="qrcode"></div>
+      <p class="url" id="url"></p>
+      <button id="backBtn">返回</button>
+    </div>
+  </div>
+</body>
+</html>
