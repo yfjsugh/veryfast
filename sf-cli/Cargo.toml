@@ -1,0 +1,13 @@
+[package]
+name = "sf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7", features = ["multipart"] }
+tokio = { version = "1", features = [
+    "rt-multi-thread", "macros", "net", "fs", "signal", "time", "io-util",
+] }
+tokio-util = { version = "0.7", features = ["io"] }
+qrcode = "0.14"
+anyhow = "1"
