@@ -29,6 +29,14 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* 提示文字 */
+.hint-note {
+  font-size: 12px;
+  color: #888;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
 /* 主页输入区 */
 #textInput {
   width: 100%;
@@ -39,7 +47,9 @@ h1 {
   background: #1b1b1b;
   color: #eee;
   margin-bottom: 16px;
-  resize: vertical;
+  resize: none;
+  overflow-y: hidden;
+  min-height: 52px;
   font-family: inherit;
 }
 
@@ -87,3 +97,31 @@ button {
 
 button.primary { background: #3b82f6; }
 button.primary:active { background: #2563eb; }
+
+/* 底部联系方式 */
+.footer {
+  margin-top: 24px;
+  font-size: 13px;
+  color: #555;
+}
+
+#contactLink {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+#contactLink:hover {
+  color: #888;
+}
+
+#qqNumber {
+  display: inline;
+  margin-left: 4px;
+  color: #666;
+  font-size: 12px;
+}
+
+#qqNumber.hidden {
+  display: none;
+}
+

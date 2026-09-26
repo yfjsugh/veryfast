@@ -55,3 +55,17 @@ $('backBtn').addEventListener('click', () => {
   result.style.display = 'none';
   home.style.display = 'block';
 });
+
+// 输入框自动增高
+textInput.addEventListener('input', () => {
+  textInput.style.height = 'auto';
+  textInput.style.height = Math.min(textInput.scrollHeight, 200) + 'px';
+});
+
+// 底部联系方式切换
+const contactLink = $('contactLink');
+const qqNumber = $('qqNumber');
+contactLink.addEventListener('click', () => {
+  qqNumber.classList.toggle('hidden');
+});
+

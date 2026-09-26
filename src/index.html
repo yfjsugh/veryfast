@@ -4,18 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="styles.css" />
-  <title>sf</title>
+  <title>SoFast</title>
   <script src="main.js" defer></script>
 </head>
 <body>
   <div class="app">
-    <h1>sf</h1>
+    <h1>SoFast</h1>
 
     <!-- 主页 -->
     <div id="home">
       <textarea id="textInput" rows="4" placeholder="在此输入要发送的文本…"></textarea>
       <button class="primary" id="btnText">发送文本</button>
       <button class="primary" id="btnFile">发送文件</button>
+      <p class="hint-note">本机若需接收，则由对方发送，本机扫码</p>
     </div>
 
     <!-- 结果页 -->
@@ -24,6 +25,12 @@
       <div id="qrcode"></div>
       <p class="url" id="url"></p>
       <button id="backBtn">返回</button>
+    </div>
+
+    <!-- 底部联系方式 -->
+    <div class="footer">
+      <span id="contactLink">📱 联系方式</span>
+      <span id="qqNumber" class="hidden">232388414</span>
     </div>
   </div>
 </body>

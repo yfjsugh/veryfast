@@ -26,9 +26,14 @@ base64 = "0.22"
 url = "2"
 qrcode = { version = "0.14", features = ["svg"] }
 
+[target.'cfg(target_os = "android")'.dependencies]
+jni = "0.21"
+ndk-context = "0.1"
+
 [profile.release]
 panic = "abort"
 codegen-units = 1
 lto = true
 opt-level = "z"
 strip = "symbols"
+
